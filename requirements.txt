@@ -1,5 +1,10 @@
-faster-whisper
-sounddevice
-numpy
-pynput
-rumps
+# Pinned: this app holds Microphone, Accessibility and Input Monitoring access, so a surprise
+# upgrade of any dependency would run with those permissions. Needs Python 3.12+ (numpy 2.5).
+# Next step for stricter supply-chain safety: pip-compile --generate-hashes, then
+# pip install --require-hashes -r requirements.txt
+faster-whisper==1.2.1
+sounddevice==0.5.6
+numpy==2.5.4
+pynput==1.8.2
+rumps==0.4.0
+pyobjc-framework-Cocoa==12.2.2
